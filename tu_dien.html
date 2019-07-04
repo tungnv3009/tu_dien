@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    tiếng việt : <input id = "viet" type="text" name="tiếng việt" placeholder="nhâp tiếng việt"/>
+    English : <input id ="eng" type="text" name="english" placeholder="english"/>
+    <input type="submit" value="Click" onclick="myDictionary()"/>
+</form>
+<script>
+    let arr = ["xin chào","chó","mèo"];
+    let arr1 = ["hello","dog","cat"];
+    function myDictionary() {
+        for (let i = 0;i < arr.length;i++){
+            document.getElementById("viet").value = arr[i];
+            document.getElementById("eng").value = arr1[i]
+
+        }
+    }
+    document.write()
+</script>
+</body>
+</html>
